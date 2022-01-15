@@ -1,0 +1,26 @@
+---
+- name: desafio
+  hosts: localhost
+  vars:
+    nomePlaneta: Kamino
+    numeroFilmes: films
+  tasks:
+    - name: Starwars
+      uri:  
+        url: "https://swapi.dev/api/planets"
+        method: GET
+        status_code: 200
+        body_format: json
+        validate_certs: false
+        return_content: yes
+      register: result
+    
+    - name: List Planetas
+      set_fact:  
+        var: result.json
+
+    - name: Mostrar Planeta
+      debug: msg=" O planeta {{ result.json|json_query(query) }} é mencionado em {{ result.json|json_query(querya) }} filmes."
+      vars: 
+        query: results[?name==`{{ nomePlaneta }}`].name | [0]
+        querya: results[?name==`{{ nomePlaneta }}`].length({{ numeroFilmes }}) | [0]
