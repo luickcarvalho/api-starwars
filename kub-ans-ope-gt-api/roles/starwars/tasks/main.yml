@@ -1,0 +1,16 @@
+---
+    - name: GET API STARWARS
+      uri:  
+        url: "https://swapi.dev/api/planets"
+        method: GET
+        status_code: 200
+        body_format: json
+        validate_certs: false
+        return_content: yes
+      register: result
+    
+    - name: MOSTRAR PLANETA
+      debug: msg=" O planeta {{ result.json|json_query(query) }} é mencionado em {{ result.json|json_query(querya) }} filmes."
+      vars: 
+        query: results[?name==`{{ nomePlaneta }}`].name | [0]
+        querya: results[?name==`{{ nomePlaneta }}`].length({{ numeroFilmes }}) | [0]
