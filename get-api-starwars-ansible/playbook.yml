@@ -2,8 +2,8 @@
 - name: DESAFIO GET API STARWARS LISTAR PLANETAS
   hosts: localhost
   vars:
-    nomePlaneta: Kamino
-    numeroFilmes: films
+    nome_planeta: Kamino
+    numero_filmes: films
   tasks:
     - name: GET API STARWARS
       uri:  
@@ -18,5 +18,5 @@
     - name: MOSTRAR PLANETA
       debug: msg=" O planeta {{ result.json|json_query(query) }} é mencionado em {{ result.json|json_query(querya) }} filmes."
       vars: 
-        query: results[?name==`{{ nomePlaneta }}`].name | [0]
-        querya: results[?name==`{{ nomePlaneta }}`].length({{ numeroFilmes }}) | [0]
+        query: results[?name==`{{ nome_planeta }}`].name | [0]
+        querya: results[?name==`{{ nome_planeta }}`].length({{ numero_filmes }}) | [0]
