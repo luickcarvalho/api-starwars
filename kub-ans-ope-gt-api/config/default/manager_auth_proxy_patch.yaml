@@ -25,4 +25,4 @@ spec:
         - "--health-probe-bind-address=:6789"
         - "--metrics-bind-address=127.0.0.1:8080"
         - "--leader-elect"
-        - "--leader-election-id=gt-api-starwars-ans-ope"
+        - "--leader-election-id=kub-ans-ope-gt-api"

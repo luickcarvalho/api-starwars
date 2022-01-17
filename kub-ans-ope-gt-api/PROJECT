@@ -4,7 +4,7 @@ layout:
 plugins:
   manifests.sdk.operatorframework.io/v2: {}
   scorecard.sdk.operatorframework.io/v2: {}
-projectName: gt-api-starwars-ans-ope
+projectName: kub-ans-ope-gt-api
 resources:
 - api:
     crdVersion: v1

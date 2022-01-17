@@ -4,5 +4,5 @@ metadata:
   name: starwars-sample
 spec:
   # TODO(user): Add fields here
-  nomePlaneta: Kamino
-  numeroFilmes: films
+ nome_planeta: Kamino
+ numero_filmes: films

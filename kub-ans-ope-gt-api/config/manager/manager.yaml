@@ -29,7 +29,7 @@ spec:
       containers:
       - args:
         - --leader-elect
-        - --leader-election-id=gt-api-starwars-ans-ope
+        - --leader-election-id=kub-ans-ope-gt-api
         image: controller:latest
         name: manager
         env:
