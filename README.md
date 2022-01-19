@@ -9,13 +9,13 @@ Imagem da Aplicação (https://hub.docker.com/r/luickcarvalho/api-starwars/tags)
 
 ## Execução da Playbook, Utilizando Ansible Instalado Localmente
 
-- Diretorio da Playbook: get-api-starwars-ansible
+- Diretório da Playbook: get-api-starwars-ansible
 
 - Tarefas Executadas dentro do Código
 
   1- Responsável pela consulta na API StarWars e retornar um JSON com todas as informações.
 
-  2- Tratar o JSON e filtra o nome do planeta incluído na variável e realiza a contagem em quantos filmes da saga este planeta teve exibição e retorna o resultado.
+  2- Tratar o JSON e filtrar o nome do planeta incluído na variável e realiza a contagem em quantos filmes da saga este planeta teve exibição e retorna o resultado.
 
 - Requisito de utilização
 
@@ -23,7 +23,7 @@ Imagem da Aplicação (https://hub.docker.com/r/luickcarvalho/api-starwars/tags)
 
 - Execução
 
-  Para que a sua playbook seja você deve estar no diretório da respectiva e digitar este comando incluído no nome do planeta que deseja.
+  Para que a sua playbook seja executada você deve estar no diretório da respectiva e digitar este comando incluído no nome do planeta que deseja.
   ```sh
   ansible-playbook playbook.yml -e 'nome_planeta=Kamino'
   ```
