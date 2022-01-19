@@ -2,8 +2,7 @@ name: Push GitHub, Build e Push Docker Hub
 
 on:
   push:
-    branches:
-    - main  
+    branch: main  
 
 jobs:
 
