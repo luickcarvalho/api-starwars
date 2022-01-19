@@ -31,7 +31,7 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
             
       - name: Acessar DIR
-        run: cd api-starwars/kub-ans-ope-gt-api/ 
+        run: cd ./api-starwars/kub-ans-ope-gt-api/ 
     
       - name: Build e push
         run:  make docker-build docker-push
