@@ -1,13 +1,14 @@
 name: Push GitHub, Build e Push Docker Hub
 on:
-
+  push:
+    branch: main
 jobs:
   Ubuntu:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Clonar Repositorio
-        run: git clone https://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@github.com/luickcarvalho/api-starwars
+      #- name: Clonar Repositorio
+      #  run: git clone https://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@github.com/luickcarvalho/api-starwars
       
       - name: listar
         run: ls -ls
