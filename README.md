@@ -37,12 +37,16 @@ Imagem da Aplicação (https://hub.docker.com/r/luickcarvalho/api-starwars/tags)
 - Etapas de utilização  
   
   Primeira
+  
   Acessar esse o diretório kub-ans-ope-gt-api e executar o comando “make deploy”, automaticamente os serviços da aplicação serão provisionados no Kubernetes.
   
   Segunda
+  
   Agora você precisa realizar a criação do serviço que irá rodar a task da playbook com o comando “kubectl –f apply config/samples/lucasfilme_v1alpha1_starwars.yaml”
+  
   Serviço provisionado!! 
   
   Terceira
+  
   Agora é preciso rodar este comado “kubectl logs --follow kub-ans-ope-gt-api-controller-manager-69c6b59b99-94rqh manager -n kub-ans-ope-gt-api-system”,
   para verificar se a playbook foi executada com sucesso e se retornou a mensagem “O planeta Kamino é mencionado em 1 filme”.
