@@ -14,6 +14,9 @@ jobs:
         with:
           repository: luickcarvalho/api-starwars
           access-token: ${{ secrets.ACCESS_TOKEN }}
+      
+      - name: Update
+        run: apt-get update
 
       - name: Install Make 
         run: sudo apt-get install make -y
