@@ -10,10 +10,7 @@ jobs:
 
     steps:
       - name: Clonar Repositorio
-        uses: actions/checkout@v1
-        with:
-          repository: luickcarvalho/api-starwars
-          access-token: ${{ secrets.ACCESS_TOKEN }}
+        run: git clone https://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@github.com/luickcarvalho/api-starwars
       
       - name: Update
         run: sudo apt-get update
