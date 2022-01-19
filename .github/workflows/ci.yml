@@ -31,7 +31,7 @@ jobs:
         run: cd ./api-starwars/kub-ans-ope-gt-api/ 
     
       - name: Build
-        run: make docker-build IMG=luickcarvalho/api-starwars:latest
+        run: docker build -t luickcarvalho/api-starwars:latest .
       
       - name: push
-        run: make docker-push IMG=luickcarvalho/api-starwars:latest
+        run: docker push luickcarvalho/api-starwars:latest
