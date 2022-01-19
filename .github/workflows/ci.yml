@@ -30,5 +30,8 @@ jobs:
       - name: Acessar DIR
         run: cd ./api-starwars/kub-ans-ope-gt-api/ 
     
-      - name: Build e push
-        run: make docker-build docker-push IMG=luickcarvalho/api-starwars:latest
+      - name: Build
+        run: make docker-build IMG=luickcarvalho/api-starwars:latest
+      
+      - name: push
+        run: make docker-push IMG=luickcarvalho/api-starwars:latest
