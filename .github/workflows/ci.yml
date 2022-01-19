@@ -1,4 +1,5 @@
 name: Push GitHub, Build e Push Docker Hub
+on:
 
 jobs:
   Ubuntu:
