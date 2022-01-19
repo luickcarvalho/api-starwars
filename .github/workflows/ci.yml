@@ -1,9 +1,5 @@
 name: Push GitHub, Build e Push Docker Hub
 
-on:
-  push:
-    branch: main  
-
 jobs:
   Ubuntu:
     runs-on: ubuntu-latest
