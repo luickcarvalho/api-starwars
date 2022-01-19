@@ -48,5 +48,5 @@ Imagem da Aplicação (https://hub.docker.com/r/luickcarvalho/api-starwars/tags)
   
   Terceira
   
-  Agora é preciso rodar este comado “kubectl logs --follow kub-ans-ope-gt-api-controller-manager-69c6b59b99-94rqh manager -n kub-ans-ope-gt-api-system”,
+  Agora é preciso executar este comando “kubectl logs --follow kub-ans-ope-gt-api-controller-manager-69c6b59b99-94rqh manager -n kub-ans-ope-gt-api-system”,
   para verificar se a playbook foi executada com sucesso e se retornou a mensagem “O planeta Kamino é mencionado em 1 filme”.
