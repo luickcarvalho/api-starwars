@@ -1,14 +1,27 @@
 name: Push GitHub, Build e Push Docker Hub
 on:
   push:
-    branch: main
+    branches: main
+  paths:
+      - kub-ans-ope-gt-api/**
+  
+  pull_request:
+    branches: main
+    paths:
+      - kub-ans-ope-gt-api/**
+
 jobs:
   Ubuntu:
     runs-on: ubuntu-latest
 
+    defaults:
+      run:
+        working-directory: kub-ans-ope-gt-api
+        shell: bash
+    
     steps:
-      - name: Clonar Repositorio
-        run: git clone https://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@github.com/luickcarvalho/api-starwars
+      #- name: Clonar Repositorio
+      #  run: git clone https://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@github.com/luickcarvalho/api-starwars
       
       - name: Update
         run: sudo apt-get update
@@ -25,9 +38,6 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
             
-      - name: Acessar DIR
-        run: cd /api-starwars/kub-ans-ope-gt-api/
-      
       - name: Build
         run: docker build -t luickcarvalho/api-starwars:latest .
       
