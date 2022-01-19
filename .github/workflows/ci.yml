@@ -5,8 +5,8 @@ on:
     branch: main  
 
 jobs:
-  - name: Ubuntu
-    runs-on: ubuntu-latest
+  name: Ubuntu
+  runs-on: ubuntu-latest
 
     steps:
 
