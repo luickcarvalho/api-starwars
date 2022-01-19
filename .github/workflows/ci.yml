@@ -5,9 +5,7 @@ on:
     branch: main  
 
 jobs:
-
-  Git Push, Docker Build e Push:
-    name: 'Ubuntu'
+  - name: Ubuntu
     runs-on: ubuntu-latest
 
     steps:
