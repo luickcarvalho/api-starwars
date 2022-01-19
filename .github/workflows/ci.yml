@@ -5,11 +5,10 @@ on:
     branch: main  
 
 jobs:
-  name: Ubuntu
+  Ubuntu:
     runs-on: ubuntu-latest
 
     steps:
-
       - name: Clonar Repositorio
         uses: actions/checkout@v1
         with:
