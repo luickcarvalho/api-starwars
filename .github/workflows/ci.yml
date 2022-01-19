@@ -1,5 +1,10 @@
 name: Push GitHub, Build e Push Docker Hub
 
+on:
+  push:
+    branches:
+    - main  
+
 jobs:
 
   Git Push, Docker Build e Push:
