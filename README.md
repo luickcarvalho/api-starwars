@@ -15,7 +15,7 @@ Imagem da Aplicação: (https://hub.docker.com/r/luickcarvalho/api-starwars/tags
 
   1- Responsável pela consulta na API StarWars, que retorna o JSON com todas as informações.
 
-  2- Trata o JSON e filtra o nome do planeta incluído na variável e realiza a contagem de quantos filmes da saga este planeta participou e retorna o resultado.
+  2- Trata o JSON, filtra o nome do planeta incluído na variável e realiza a contagem de quantos filmes da saga este planeta participou e retorna o resultado.
 
 - Requisito de utilização
 
