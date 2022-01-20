@@ -29,12 +29,15 @@ Imagem da Aplicação: (https://hub.docker.com/r/luickcarvalho/api-starwars/tags
   ```
 ## Executar o Operator Ansible no Cluster Kubernetes
 
-- Requisito de utilização
+- Requisito:
+  
   Possuir Cluster Kubernetes provisionado
+  
   Clone do diretório kub-ans-ope-gt-api
+  
   Ter o Make instalado
   
-- Etapas de Utilização  
+- Etapas de Execução:  
   
   Primeira
   
