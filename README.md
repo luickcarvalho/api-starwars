@@ -13,21 +13,21 @@ Imagem da Aplicação: (https://hub.docker.com/r/luickcarvalho/api-starwars/tags
 
 - Tarefas Executadas dentro do Código
 
-  1- Responsável pela consulta na API StarWars, que retorna o JSON com todas as informações.
+  1- Responsável pela consulta na API StarWars e retorna o JSON com todas as informações.
 
-  2- Trata o JSON, filtra o nome do planeta incluído na variável e realiza a contagem de quantos filmes da saga este planeta participou e retorna o resultado.
+  2- Trata o JSON, filtra o nome do planeta incluído na variável, realiza a contagem de quantos filmes da saga este planeta participou e retorna o resultado.
 
 - Requisito de utilização
 
-  Quando executar sua playbook, fique atento. Você deve ter o Ansible instalado em seu Sistema Operacional.
+  Quando executar sua playbook, fique atento. Você deve possuir o Ansible instalado em seu Sistema Operacional.
 
 - Execução
 
-  Para que a sua playbook seja executada, você deve estar no diretório da respectiva e digitar este comando incluído no nome do planeta.
+  Para que a sua playbook seja executada, você deve estar no diretório da respectiva e executar este comando.
   ```sh
   ansible-playbook playbook.yml -e 'nome_planeta=Kamino'
   ```
-## Executar o Operator Ansible em um Cluster Kubernetes
+## Executar o Operator Ansible no Cluster Kubernetes
 
 - Requisito de utilização
   Possuir Cluster Kubernetes provisionado
