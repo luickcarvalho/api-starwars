@@ -1,9 +1,9 @@
-# GET API STARWARS
+# CONSULTA API STARWARS
 
 
 ## Descrição
 Esta aplicação desenvolvida em Ansible realiza uma consulta nesta API (https://swapi.dev),
-faz o filtro de informações e com o módulo Debug do Ansible retorna a mensagem "O planeta {{ nome_planeta}} é mencionado em {{ numero_filmes}} filmes."
+faz o filtro de informações e com o módulo Debug retorna a mensagem "O planeta {{ nome_planeta}} é mencionado em {{ numero_filmes}} filmes."
 
 Imagem da Aplicação: (https://hub.docker.com/r/luickcarvalho/api-starwars/tags)
 
