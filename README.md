@@ -51,6 +51,7 @@ Imagem da Aplicação: (https://hub.docker.com/r/luickcarvalho/api-starwars/tags
   Serviço provisionado!! 
   
   Terceira
+  >É preciso executar o comando "kubectl get pods -A" e pegar o pod "kub-ans-ope-gt-api-controller-manager-69c6b59b99-94rqh".
   
-  >Agora é preciso executar o comando “kubectl logs --follow kub-ans-ope-gt-api-controller-manager-69c6b59b99-94rqh manager -n kub-ans-ope-gt-api-system”,
-  >para verificar se a playbook foi executada com sucesso e se retornou a mensagem “O planeta Kamino é mencionado em 1 filme”.
+  >Agora é preciso executar o comando para acessar os logs “kubectl logs --follow kub-ans-ope-gt-api-controller-manager-69c6b59b99-94rqh manager -n kub-ans-ope-gt-api-system”,
+  >verifique se a playbook foi executada com sucesso e se retornou a mensagem “O planeta Kamino é mencionado em 1 filme”.
